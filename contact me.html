@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: #ccc;
+        }
+        .header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        .header h1 span {
+            color: #ffcc00;
+        }
+        .nav {
+            text-align: right;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+        .nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            color: #fff;
+        }
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #fff;
+            font-size: 36px;
+        }
+        .container h2 span {
+            color: #ffcc00;
+        }
+        .container p {
+            color: #888;
+            font-size: 16px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .contact-info {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .contact-info p span {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            background-color: #222;
+            color: #ccc;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e6b800;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #ccc;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                text-align: center;
+            }
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                padding: 20px 10px;
+            }
+            .container h2 {
+                font-size: 28px;
+            }
+            .container p {
+                font-size: 14px;
+            }
+            .contact-info p {
+                font-size: 16px;
+            }
+            .contact-form input, .contact-form textarea {
+                font-size: 14px;
+            }
+            .contact-form button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>About<span>Me.</span></h1>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about-me.html">About</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="my-portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="family.html">Family</a>
+            <a href="contact me.html">Contact</a>
+        </div>
+        <div class="container">
+            <h2>Contact <span>Me</span></h2>
+            <p>The only journey is the one within - Rainer Maria Rilke</p>
+            <div class="contact-info">
+                <p><span>Address:</span> Sherubtse College, Kanglum, Trashigang, Bhutan</p>
+                <p><span>Phone:</span> +97517628936</p>
+                <p><span>Email:</span> yeshidrayang8@gmail.com</p>
+                <p><span>Website:</span> www.YeshiDrayang.com</p>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Name" id="name">
+                <textarea placeholder="Message" id="message"></textarea>
+                <button onclick="displayMessage()">Submit</button>
+            </div>
+        </div>
+        <div class="container">
+            <h1>About Me.</h1>
+            <p>Thank you for visiting my page</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100010303667731"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thelifeof_drayang/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <script>
+            function displayMessage() {
+                const name = document.getElementById('name').value;
+                const message = document.getElementById('message').value;
+                if (name && message) {
+                    alert(`Thank you, ${name}! Your message has been received.`);
+                } else {
+                    alert('Please fill out both fields.');
+                }
+            }
+        </script>
+    </body>
+</html>

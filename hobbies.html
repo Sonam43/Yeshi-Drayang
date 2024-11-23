@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>My Hobbies</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #b3b3b3;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+        }
+        .navbar a {
+            color: #b3b3b3;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .navbar a.active {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin: 0;
+        }
+        .header h1 span {
+            color: #d4af37;
+        }
+        .header h2 {
+            color: #d4af37;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        .header p {
+            color: #b3b3b3;
+            font-size: 16px;
+            margin: 0;
+        }
+        .hobbies{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .service {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service i {
+            font-size: 40px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        .service h3 {
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .service p {
+            color: #b3b3b3;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .navbar a {
+                margin: 10px;
+            }
+            .service {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 28px;
+            }
+            .header h2 {
+                font-size: 24px;
+            }
+            .header p {
+                font-size: 14px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about me.html">About</a>
+                <a href="hobbies.html" class="active">Hobbies</a>
+                <a href="my-portfolio.html">Portfolio</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Family.html">Family</a>
+                <a href="contact me.html">Contact</a>
+            </div>
+            <div class="header">
+                <h1>About<span>Me.</span></h1>
+                <h2>My <span>Hobbies</span></h2>
+                <p>Hobbies are enjoyable activities that provide relaxation and balance in life. They range from creative pursuits like painting to active ones like sports. Hobbies also reduce stress, boost mental well-being and foster personal growth, making them valuable for both mind and body.</p>
+            </div>
+            <div class="hobbies">
+                <div class="service">
+                    <h3>Basketball</h3>
+                    <p>From other sports I like to play basketball as we use dribbling, passing, shooting and defending to outplay the other team."Basketball isn't just a sport.It's an art, one that's constantly evolving. From every dribble to every shot, it's a canvas of dedication,passion and teamwork."</p>
+                </div>
+                <div class="service">
+                    <h3>Traveling</h3>
+                    <p>I love to travel because when we travel we can explore new things and we can see beautiful places, so it can also help us in reducing stress and make our mind fresh. "Traveling leaves you speechless,then turns you into a storyteller."</p>
+                </div>
+                <div class="service">
+                    <h3>Drawing</h3>
+                    <p>Drawing is a personal and creative outlet for me, allowing expression, relaxation, and focus while enhancing my attention to detail and bringing joy."Drawing is not just a way to see the world,it's a way to feel it."</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

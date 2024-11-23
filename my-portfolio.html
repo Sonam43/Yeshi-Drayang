@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <style>
+   body {
+            background-color: #1a1a1a;
+            color: #b3b3b3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h1 span {
+            color: #f0a500;
+        }
+        p {
+            color: #b3b3b3;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0f0f1a;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar .logo span {
+            color: #f9c74f;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 30px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+        }
+        .navbar ul li a:hover {
+            color: #f9c74f;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container .text, .container .image {
+                max-width: 100%;
+            }
+            .container .text {
+                margin-bottom: 20px;
+            }
+            .navbar {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">About<span>Me.</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about me.html">About</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="my-portfolio.html">Portfolio</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Family.html">Family</a></li>
+                <li><a href="contact me.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>
+                My
+                <span>
+                    Portfolio
+                </span>
+            </h1>
+            <p>
+                This are the some activities that I have done after reaching college and it was fun doing it, made good memories .
+            </p>
+            <div class="portfolio">
+                <img alt="This is basketball team of sherubtse at Guwahati." height="300" src="image/WhatsApp Image 2024-11-11 at 6.17.09 PM (1).jpeg" width="300"/>
+                <img alt="This is a picture of our college basketball team for both men and women." height="300" src="image/WhatsApp Image 2024-11-11 at 6.17.10 PM.jpeg" width="300"/>
+                <img alt="It was my first drawing reaching college." height="300" src="image/Drawing 3.jpeg" width="300"/>
+                <img alt="After my first drawing i got more confidence to draw another one. " height="300" src="image/drawing 2.jpeg" width="300"/>
+                <img alt="It was the view from Chokortshe." height="300" src="image/view 1.jpeg" width="300"/>
+                <img alt="Evening view form my village" height="300" src="image/view 2.jpeg" width="300"/>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+        <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0f0f1a;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar .logo span {
+            color: #f9c74f;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 30px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+        }
+        .navbar ul li a:hover {
+            color: #f9c74f;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 50px;
+        }
+        .container .text {
+            max-width: 50%;
+        }
+        .container .text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .container .text p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #b0b0b0;
+        }
+        .container .text .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f9c74f;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .container .image img {
+            border-radius: 10px;
+            max-width: 100%;    
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container .text, .container .image {
+                max-width: 100%;
+            }
+            .container .text {
+                margin-bottom: 20px;
+            }
+            .navbar {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">About<span>Me.</span></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about me.html">ABOUT</a></li>
+                <li><a href="hobbies.html">HOBBIES</a></li>
+                <li><a href="my-portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Resume.html">RESUME</a></li>
+                <li><a href="Family.html">FAMILY</a></li>
+                <li><a href="contact me.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="text">
+                <p>Hello, Welcome</p>
+                <h1>I am Yeshi Drayang</h1>
+                <p>I am second year college student purseing Data Science and Data Analitic.</p>
+                <a class="btn" href="contact me.html">Contact me</a>
+            </div>
+            <div class="image">
+                <img src="image/WhatsApp Image 2024-11-11 at 6.17.09 PM.jpeg" alt="#" width="400" height="400">
+            </div>
+        </div>
+    </body>
+</html>
